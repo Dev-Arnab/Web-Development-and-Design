@@ -1,0 +1,41 @@
+body{
+	background-color:#d0dff7;
+	font-family:Arial, Helvetica, san serif;
+}
+
+footer{
+	background-color:navy;
+	color:white;
+	font-family:verdana;
+	font-size:smaller;
+	font-style:italic;
+}
+
+h1{
+	color:navy;
+	font-family:verdana;
+	text-align:center;
+}
+
+h2, h3{
+	color:#7a401a;
+	font-family:verdana;
+}
+
+.paleblue{
+	background-color:#f9f7fc;
+}
+
+.centered{
+	text-align:center;
+	font-size:110%;
+}
+
+.standout{
+	font-style:bold;
+	font-weight:bold;
+}
+
+#contact{
+	color:red;
+}

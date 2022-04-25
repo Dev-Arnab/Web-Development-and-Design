@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Functions</title>
+</head>
+
+<body>
+	
+	<p id="yo">Hi everybody</p>
+
+	<script>
+		function print_message(msg){
+			alert(msg);
+		}
+		
+		function welcome_message(ms){
+			alert(ms);
+			var name=prompt("What is your name?");
+			return name;
+		}
+
+		var x="Welcome to Javascript";
+		print_message(x);
+		x="Goodbye from Javascript";
+		print_message(x);
+
+		var a=getElementsById(yo);
+		document.write(a);
+
+		//Due to some reason the below code doesn't work
+		
+		var firstname=welcome_message("Hi");
+		document.write(firstname);
+	</script>
+
+</body>
+
+</html>

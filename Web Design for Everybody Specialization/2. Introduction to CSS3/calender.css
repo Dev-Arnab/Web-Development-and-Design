@@ -1,0 +1,79 @@
+/*Table color, border and spacing*/
+table.calender{
+	color:#06425C;
+	border:3px solid black;
+	border-spacing:0;
+	border-radius:0 0 25px 25px;
+}
+
+/*Alternating color between even and odd*/
+tr:nth-child(odd){
+	background:rgb(135,206,235);
+}
+
+tr:nth-child(even){
+	background:#9ACD32;
+}
+
+/*cut off the edges of last row*/
+tr:last-child{
+	border-radius:0 0 25px 25px;
+}
+
+tr:last-child>td:first-child{
+	border-radius:0 0 0 25px;
+}
+
+tr:last-child>td:last-child{
+	border-radius:0 0 25px 0;
+}
+
+/*Beautify the caption*/
+.calender caption{
+	text-transform:uppercase;
+	color:#FFFAFA;
+	background:rgb(128,128,128);
+	border-radius:25px 25px 0 0;
+	font-size:150%;
+}
+
+.calender th,.calender td{
+	margin:2px;
+	padding-bottom:2px;
+}
+
+.calender th{
+	text-align:center;
+	background:#F0E68C;
+}
+
+.calender td{
+	height:100px;
+	width:100px;
+	vertical-align:top;
+}
+
+.holiday{
+	background:rgba(240,230,140,.5);
+
+}
+
+.old,.new{
+	background:rgba(255,192,203,.5);
+	color:rgba(0,0,0,.25);
+}
+
+span{
+	visibility:hidden;
+	text-align:center;
+	color:#800000;
+	display:block;
+}
+
+td:hover>span{
+	visibility:visible;
+}
+
+td{
+	border:1px dotted black;
+}

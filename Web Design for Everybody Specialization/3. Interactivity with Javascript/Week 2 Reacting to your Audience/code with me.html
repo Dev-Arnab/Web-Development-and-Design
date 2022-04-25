@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>A Little Fun</title>
+
+	<link rel="stylesheet" href="code with me.css">
+
+	<script>
+		function open_me(){
+			x=document.getElementById('js');
+			//x.style.display="block"
+			//We can also do the above work by using css
+			x.className="open";
+		}
+		function close_me(){
+			x=document.getElementById('js');
+			//x.style.display="none"
+			//We can also do the above work by using css
+			x.className="close";
+		}
+	</script>
+
+</head>
+
+<body>
+	<h1>Modify the DOM</h1>
+
+	<button type="button" onclick="open_me();">Open!</button>
+	<button type="button" onclick="close_me();">Close!</button>
+
+	<p>This code shouldn't change</p>
+	<p id="js">This will change</p>
+	<p>This shouldn't change either</p>
+
+</body>
+
+</html>

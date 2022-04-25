@@ -1,0 +1,11 @@
+/*let's play with div*/
+body{
+	display:table;
+}
+div{
+	width:30%;
+	background:skyblue;
+
+	display:table:cell;
+	
+}

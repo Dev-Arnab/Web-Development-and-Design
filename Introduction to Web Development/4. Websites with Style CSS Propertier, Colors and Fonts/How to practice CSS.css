@@ -1,0 +1,49 @@
+body{
+	background:lightblue;
+}
+
+h1{
+	color:navy;
+}
+
+img{
+	width:200px;
+	height:100px;
+}
+
+#text{
+	font-size:300%;
+	color:blue;
+}
+
+.test_class{
+	color:red;
+	font-size:500%;
+}
+
+td{
+	border:1px solid black;
+}
+
+tr:nth-child(even){
+	background-color:white;
+}
+
+tr:nth-child(odd){
+	background-color:lightgrey;
+}
+
+table{
+	border:2px solid red;
+	width:90%;
+	height:auto;
+	text-align:center;
+}
+
+#output{
+	color:green;
+}
+
+#table_img{
+	text-align: center;
+}

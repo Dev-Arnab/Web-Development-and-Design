@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Head</title>
+
+	<script>
+		function message(msg){
+			document.getElementById("output").innerHTML=msg + " event";
+		}
+
+		function display_date(){
+			document.getElementById('butt').innerHTML=Date();
+		}
+	</script>
+
+
+</head>
+
+<body onload="message('LOADING')" onresize="message('RESIZING')" onscroll="message('SCROLLING')">
+
+	
+
+
+	<h1>Javascript events - Responding to events</h1>
+	<p onclick="message('CLICKING')">It is possible to call functions based on events</p>
+
+	<p>Click on the paragraph above to trigger on <em>onclick</em> event. Reload the page to see onload event.</p>
+
+	<p id="output"></p>
+
+	<p>Today's date ad time is <span id="butt">(Click the button)</span></p>
+
+	<button onclick="display_date()"> dAtE BuTtOn</button>
+
+</body>
+
+
+</html>

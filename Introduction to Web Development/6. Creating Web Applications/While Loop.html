@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>While Loop</title>
+</head>
+
+<body>
+	<script>
+		function vertical_name(){
+		var fname = document.getElementById("full_name").value;
+
+		if(fname == ""){
+			document.getElementById("output").innerHTML = "Please input a name.";
+		}
+		else{
+			var i = 0;
+			while(i < fname.length){
+				document.getElementById("output").innerHTML += fname[i] + "<br>";
+				i++;
+			}
+		}
+	}
+	</script>
+
+	<label>Full name: <input type="text" name="text" id="full_name"></label>
+	<input type="submit" value="Show" onclick="vertical_name()">
+
+	<p id="output"></p>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Complex Validation</title>
+
+	<link rel="stylesheet" href="Complex Form Validation.css">
+	<script src="Complex Form Validation.js"></script>
+</head>
+
+<body>
+	<form action="#">
+		<div id="fullpage">
+
+			<h1>Make an Order: </h1>
+
+			<table border="0">
+				<tr>
+					<td class="label_column">First Name:</td>
+					<td class="input_column"><input type="text" name="firstname" id="first_name" onblur="validate_first_name();"></td>
+					<td class="feedback_column"><span id="first_name_prompt">&nbsp;</span></td>
+				</tr>
+				<tr>
+					<td class="label_column">Last Name:</td>
+					<td class="input_column"><input type="text" name="lastname" id="last_name" onblur="validate_last_name();"></td>
+					<td class="feedback_column"><span id="last_name_prompt">&nbsp;</span></td>
+				</tr>
+				<tr>
+					<td class="label_column">Phone Number:</td>
+					<td class="input_column"><input type="number" name="phonenumber" id="phone" placeholder="xxx-xxx-xxxx" onblur="validate_phone();"></td>
+					<td class="feedback_column"><span id="phone_prompt">xxx-xxx-xxxx</span></td>
+				</tr>
+				<tr>
+					<td class="label_column">Order Quantity</td>
+					<td class="input_column"><input type="number" name="quantity" id="quantity"></td>
+					<td class="feedback_column"><span id="quantity_prompt">1&ndash;55</span></td>
+				</tr>
+				<tr>
+					<td class="label_column">Item Price: </td>
+					<td class="input_column"><input type="text" nme="price" id="price" value="10.00" readonly></td>
+					<td class="feedback_column">USD</td>
+				</tr>
+
+				<tr>
+					<td class="Button" id="Button" colspan="3"><span class="buttonBG" onclick="calc_order();">Order Now</span></td>
+				</tr>
+
+				
+
+
+			</table>
+
+			<span id="order_confirm"></span>
+
+
+		</div>
+		<!--
+			<input type="submit" value="submit">
+		-->
+
+	</form>
+
+</body>
+
+</html>

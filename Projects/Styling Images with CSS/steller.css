@@ -1,0 +1,82 @@
+body{
+	background-image: url("tiles.jpg");
+	background-color:#d0dff7;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	font-family:Arial, Helvetica, san-serif;
+}
+
+figure{
+	width:200px;
+	display:inline-block;
+	margin-right:-30px;
+	border:5px solid white;
+	border-radius:5px;
+	padding:10px;
+}
+
+figcaption{
+	background:white;
+	font-weight:bold;
+	height:40px;
+	padding-top:10px;
+	text-align:center;
+}
+
+footer{
+	background:navy;
+	color:white;
+	font-family:verdana;
+	font-size:smaller;
+	font-style:italic;
+}
+
+h1{
+	color:navy;
+	font-family:verdana;
+	text-align:center;
+}
+
+h2,h3{
+	color:#7a401a;
+	font-family:verdana;
+}
+
+.centered{
+	text-align:center;
+	font-size:110%;
+}
+
+.content{
+	background-color:#d0dff7;
+	margin-left:120px;
+	margin-right:120px;
+	margin-top:20px;
+	padding:20px;
+}
+.house{
+	width:400px;
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+
+}
+
+.imgborder{
+	border-radius:50%;
+	border:5px solid white;
+	padding:10px;
+}
+
+.paleblue{
+	background-color:#f9f7fc;
+}
+
+.standout{
+	font-style:italic;
+	font-weight:bold;
+}
+
+#contact{
+	color:red;
+}

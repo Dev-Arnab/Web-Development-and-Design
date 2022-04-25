@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Debugging</title>
+
+</head>
+
+<body>
+	<script>
+		function math(){
+			var a = 3;
+			var b = 5;
+			var c = 0;
+			var answer = a * b / c;
+
+			document.getElementById("answer").innerHTML = "'Your answer is " + answer;
+		}
+	</script>
+
+	<h1>Javascript debugging</h1>
+
+	<button onclick="math();">Show Answer</button>
+
+	<p style="color:green; font-size:1000%;" id="answer"></p>
+
+</body>
+
+
+</html>

@@ -1,0 +1,53 @@
+body{
+	background-color:lightgrey;
+	border:5px;
+	text-align:center;
+}
+
+
+h1{
+	text-align:center;
+	color:green;
+	font-weight:bold;
+}
+
+#landscape{
+	width:500px;
+	text-align:center;
+}
+
+legend{
+	font-size: 200%;
+	color:red;
+}
+
+#paragraph{
+	font-family:verdana;
+	text-align:center;
+}
+
+table{
+	border:2px dotted black;
+	width:100%;
+}
+
+
+td{
+	border:1px solid blue;
+}
+
+.tab_img{
+	width:100%;
+}
+
+tr:nth-child(even){
+	background-color:lightgreen;
+}
+
+tr:nth-child(odd){
+	background-color:lightblue;
+}
+
+.change{
+	padding:2%;
+}

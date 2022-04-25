@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calender</title>
+	<link rel="stylesheet" href="css/calender.css">
+	<style>/*Table color, border and spacing*/
+table.calender{
+	color:#06425C;
+	border:3px solid black;
+	border-spacing:0;
+	border-radius:0 0 25px 25px;
+}
+
+/*Alternating color between even and odd*/
+tr:nth-child(odd){
+	background:rgb(135,206,235);
+}
+
+tr:nth-child(even){
+	background:#9ACD32;
+}
+
+/*cut off the edges of last row*/
+tr:last-child{
+	border-radius:0 0 25px 25px;
+}
+
+tr:last-child>td:first-child{
+	border-radius:0 0 0 25px;
+}
+
+tr:last-child>td:last-child{
+	border-radius:0 0 25px 0;
+}
+
+/*Beautify the caption*/
+.calender caption{
+	text-transform:uppercase;
+	color:#FFFAFA;
+	background:rgb(128,128,128);
+	border-radius:25px 25px 0 0;
+	font-size:150%;
+}
+
+.calender th,.calender td{
+	margin:2px;
+	padding-bottom:2px;
+}
+
+.calender th{
+	text-align:center;
+	background:#F0E68C;
+}
+
+.calender td{
+	height:100px;
+	width:100px;
+	vertical-align:top;
+}
+
+.holiday{
+	background:rgba(240,230,140,.5);
+
+}
+
+.old,.new{
+	background:rgba(255,192,203,.5);
+	color:rgba(0,0,0,.25);
+}
+
+span{
+	visibility:hidden;
+	text-align:center;
+	color:#800000;
+	display:block;
+}
+
+td:hover>span{
+	visibility:visible;
+}
+
+td{
+	border:1px dotted black;
+}
+</style>
+</head>
+
+<body>
+	<table class="calender">
+		<caption>September 2020</caption>
+		<thead>
+			<tr>
+				<th>Sun</th>
+				<th>Mon</th>
+				<th>Tue</th>
+				<th>Wed</th>
+				<th>Thu</th>
+				<th>Fri</th>
+				<th>Sat</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="old">30</td>
+				<td class="31">31</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3*<span>Return Home</span></td>
+				<td>4*<span>Shreya's Birthday</span></td>
+				<td>5</td>
+			</tr>
+
+			<tr>
+				<td>6</td>
+				<td>7</td>
+				<td>8*<span>something</span></td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+
+			<tr>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18*<span>Another thing</span></td>
+				<td>19</td>
+			</tr>
+
+			<tr>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td class="holiday">23<span>Autumnal Solstice</span></td>
+				<td>24*<span>My Birthday</span></td>
+				<td>25</td>
+				<td>26</td>
+			</tr>
+
+			<tr>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td class="new">1</td>
+				<td class="new">2</td>
+				<td class="new">3</td>
+			</tr>
+		</tbody>
+
+
+	</table>
+
+</body>
+
+</html>

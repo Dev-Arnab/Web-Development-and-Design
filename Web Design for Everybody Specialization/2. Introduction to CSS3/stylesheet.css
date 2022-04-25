@@ -1,0 +1,28 @@
+       
+        p{
+			color:black;
+			font-family:cursive;
+			font-variant:small-caps;
+			line-height:101%;
+			font-size:120%;
+		}
+		h1{
+        	color:blue;
+        	background-color:grey;
+        	text-align:center;
+        }
+
+        header{
+        	text-align:center;
+        	color:indigo;
+        	background-color:grey;
+        }
+
+        body{
+        	background-color:grey;
+        }
+
+
+
+		
+	

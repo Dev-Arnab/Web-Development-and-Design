@@ -1,0 +1,49 @@
+body{
+	background-color:#FFF;
+	color:#000;
+	font-family:"Times New Roman", Times, serif;
+	font-size:large;
+}
+
+table{
+	width:525px;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+
+td{
+	padding:5px;
+	word-wrap:break-word;
+}
+
+/*Ids and Classes*/
+
+#fullpage{
+	margin:100px;
+}
+
+.label_column{
+	text-align:right;
+}
+
+.input_column{
+	text-align:left;
+}
+
+.feedback_column{
+	text-align:center;
+	vertical-align:center;
+	color:lightgrey;
+	font-size:small;
+}
+
+.Button{
+	margin:auto;
+	text-align:center;
+	width:50px;
+
+}
+.buttonBG{
+	background-color:lightgrey;
+	border-radius:3px;
+}

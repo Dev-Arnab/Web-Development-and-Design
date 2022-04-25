@@ -1,0 +1,31 @@
+body{
+	text-align:center;
+}
+
+
+button{
+	background-color:skyblue;
+	width:100px;
+	font-weight:bold
+
+}
+
+p{
+	border-style: solid;
+	width:300px;
+	position:relative;
+	top:100px;
+	left:520px;
+}
+
+#js{
+	background-color:yellow;
+}
+
+.close{
+	display:none;
+}
+
+.open{
+	display:block;
+}

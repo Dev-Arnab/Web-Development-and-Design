@@ -1,0 +1,15 @@
+<script>
+	var grades=[83, 85, 89, 99, 95];
+	var sum=0;
+
+	if(grades.length!=0){
+		for(x=0;x<grades.length;x++){
+			sum+=grades[x];
+		}
+		document.write("Sum of grades is " + sum + "<br>");
+		document.write("Average of the grades is " + (sum/grades.length));
+	}
+	else{
+		document.write("You have no element in the array!!!");
+	}
+</script>

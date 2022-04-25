@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+
+	<link rel="stylesheet" href="Assignment.css">
+	<script src="Assignment.js"></script>
+
+</head>
+
+<body>
+
+<header>
+	<h1>Personal Information Form</h1>
+	<p>
+		The form below collects the basic informations about a person. I chose person form over others because it has variation in it. I can use many types of input in a personal information form which is a little difficult in case of other forms. This form will not submit the informations anywhere. The submit button is just for display.
+	</p>
+
+	<br>
+</header>
+
+	<form>
+		<table>
+
+			<h3>Information</h3>
+
+            <!--Below is a table that contains all the elements of the form-->
+
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" name="fname" id="fname" min="2" max="20" onblur="fname_validate()" class="back_color" required></td>
+				<td id="fname_war" class="warning">&nbsp;</td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" name="lname" id="lname" min="3" max="25" onblur="lname_validate()" class="back_color"></td>
+				<td id="lname_war" class="warning">&nbsp;</td>
+			</tr>
+			<tr>
+				<td>Date of Birth:</td>
+				<td><input type="date" name="birth" id="birth" class="back_color" required></td>
+				<td class="warning"></td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><input type="text" name="address" id="address" class="back_color" required></td>
+				<td class="warning"></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="email" id="email" class="back_color" required></td>
+				<td class="warning"></td>
+			</tr> 
+			<tr>
+				<td>Favourite color:</td>
+				<td><input type="color" name="color" id="color"></td>
+				<td class="warning"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password" id="password" onblur="length_check();" class="back_color"></td>
+				<td id="pass_war"></td>
+			</tr>
+			<tr>
+				<td>Confirm Password:</td>
+				<td><input type="password" id="con_password" onblur="password_confirm()"class="back_color"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td>
+					<label><input type="radio" name="gender">Male</label>
+					<br>
+					<label><input type="radio" name="gender">Female</label>
+					<br>
+					<label><input type="radio" name="gender" checked>Others</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Favourite Language:</td>
+				<td>
+					<label><input type="checkbox">HTML</label><br>
+					<label><input type="checkbox">CSS</label><br>
+					<label><input type="checkbox">Javascript</label><br>
+					<label><input type="checkbox" checked>Others</label>
+				</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+	</form>
+
+	<br>
+
+	<div>
+		<button onclick="show_information()">Submit</button>
+	</div>
+</body>
+
+
+</html>

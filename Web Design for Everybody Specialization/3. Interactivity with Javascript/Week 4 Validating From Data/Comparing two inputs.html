@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Compare</title>
+
+	<style>
+		input:focus{
+			background-color: #B3B3B3;
+		}
+		label{
+			display:block;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<script>
+		function check(){
+			var email_1 = document.getElementById('email');
+			var email_2 = document.getElementById('email_conf');
+
+			if(email_1.value != email_2.value){
+				alert("The two email must be same!");
+				return false;
+			}
+		}
+	</script>
+	<fieldset>
+		<legend>Compare two inputs</legend>
+
+		<form>
+
+		<label>Email: <input type="email" name="email1" id="email" required></label>
+		
+		<label>Confirm: <input type="email" name="email2" id="email_conf" onchange="check()" required></label>
+		
+		<input type="submit" value="Confirm Email!" onclick="return check()">
+
+	    </form>
+
+	</fieldset>
+
+</body>
+
+</html>

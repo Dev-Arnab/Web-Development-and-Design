@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Checkboxs and radio buttons</title>
+
+	<style>
+		
+		input{
+			border:1px solid black;
+		}
+
+		input:focus{
+			background-color:#E6E6E6;
+		}
+
+		#nick{
+			margin-left:4%;
+			display:none;
+			width:50%;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<script>
+		function nickname_function(){
+			if(document.getElementById('yes_nick').checked){
+				
+				document.getElementById('nick').style.display="inline";
+				
+				document.getElementById('nickname').setAttribute('required', true);
+
+			}
+			else{
+				
+				document.getElementById('nickname').removeAttribute('required');
+
+				document.getElementById('nick').style.display="none";
+
+			}
+		}
+	</script>
+
+	<form action="http://www.facebook.com">
+		
+<!--
+		<fieldset>
+			<legend>Checkboxes and radio buttons</legend>
+
+			Gender
+			<br>
+			<label><input type="radio" name="gender" value="Male">Male</label>
+			<br>
+			<label><input type="radio" name="gender" value="Female">Female</label>
+			<br><br>
+
+			Favourite Food(Radio)
+			<br>
+			<label><input type="radio" name="food" value="Pizza">Pizza</label>
+			<br>
+			<label><input type="radio" name="food" value="Chips">Chips</label>
+			<br>
+			<label><input type="radio" name="food" value="Burger" checked="true">Burger</label>
+			<br><br>
+
+			Favourite Food(Checkbox)
+			<br>
+			<label><input type="checkbox" name="Food" value="Pizza">Pizza</label>
+			<br>
+			<label><input type="checkbox" name="Food" value="Chips">Chips</label>
+			<br>
+			<label><input type="checkbox" name="Food" value="Kale" checked="true">Kale</label>
+			<br>
+			<label><input type="checkbox" name="Food" value="Burger">Burger</label>
+			<br><br>
+
+			<input type="submit" value="Submit form">
+
+
+
+		</fieldset>
+	-->
+
+	<fieldset>
+		<legend>Form Validation</legend>
+
+		<!--The for is used to link the input and the label as they are separate-->
+		<label for="fname">First name: </label>
+		<input type="text" name="fname" id="fname" required>
+		<br>
+
+		<label for="lname">Last name: </label>
+		<input type="text" name="lname" is="lname" required>
+		<br>
+
+		<label for="yes_nick">Nickname?: </label>
+		<input type="checkbox" name="yes_nick" id="yes_nick" value="yes" onchange="nickname_function()">
+		<br>
+
+		<div id="nick">
+			<label for="nickname">Nickname: </label>
+			<input type="text" name="nickname" id="nickname">
+			<br><br>
+		</div>
+
+		<input type="submit" value="Verify">
+
+
+	</fieldset>
+
+	</form>
+
+
+</body>
+
+
+</html>

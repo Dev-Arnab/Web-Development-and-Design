@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Input Validation</title>
+</head>
+
+<body>
+	<script>{
+		function check_field_1(){
+			var field = document.getElementById("field_1").value;
+			var regex = /^[A-Za-z]{5}$/;
+
+			if(regex.test(field)){
+				document.getElementById("message_1").innerHTML = "Input Accepted";
+			}
+			else{
+				document.getElementById("message_1").innerHTML = "Please use a five letter word";
+			}
+		}
+
+		function check_field_2(){
+			var field = document.getElementById("field_2").value;
+			var regex = /^[A-Za-z]{7}$/;
+
+			if(regex.test(field)){
+				document.getElementById("message_2").innerHTML = "Input Accepted";
+			}
+			else{
+				document.getElementById("message_2").innerHTML = "Please use a seven letter word";
+			}
+		}
+
+		function check_field_3(){
+			var field = document.getElementById("field_3").value;
+			var regex = /^[A-Za-z]{3}$/;
+
+			if(regex.test(field)){
+				document.getElementById("message_3").innerHTML = "Input Accepted";
+			}
+			else{
+				document.getElementById("message_3").innerHTML = "Please use a three letter code";
+			}
+		}
+	}
+	</script>
+
+	<h1>Javascript Form Validation</h1>
+
+	<form>
+		<fieldset>
+			<legend>Form Validation</legend>
+
+			<label>
+				Field 1: 
+				<input type="text" id="field_1" onblur="check_field_1();">
+				<span id="message_1"></span>
+			</label>
+			<br>
+			<label>
+				Field 2: 
+				<input type="text" id="field_2" onblur="check_field_2();">
+				<span id="message_2"></span>
+			</label>
+			<br>
+			<label>
+				Country Code JS: 
+				<input type="text" name="country_code" id="field_3" onblur="check_field_3();">
+				<span id="message_3"></span>
+			</label>
+			<br>
+			<label>
+				Country Code HTML5: 
+				<input type="text" name="country_code" title="Three letter country code"
+				pattern="[A-Za-z]{3}" required>
+			</label>
+			<br><br>
+
+			<input type="submit" value="Submit Form">
+
+		</fieldset>
+
+	</form>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,32 @@
+body{
+	font-family:verdana;
+}
+
+header{
+	background-color:#0B0736;
+	color:#DECC43;
+	display:block;
+	padding:10px;
+}
+
+img{
+	float:left;
+	padding-bottom:10px;
+	padding-right:10px;
+	width:150px;
+}
+
+p{
+	color:#0B0736;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.results{
+	background-color:#DECC43;
+	border:5px dashed #0B0736;
+	display:block;
+	font-weight:bold;
+	overflow:auto;
+	padding:20px;
+}

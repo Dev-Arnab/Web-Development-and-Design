@@ -1,0 +1,24 @@
+<script>
+	var grades=[3, 5, 9, , 4, 2, ];
+	var sum=0;
+	var count=0;
+
+	if(grades.length!=0){
+		for(x=0;x<grades.length;x++){
+			document.write(grades[x] + " ");
+
+			if(grades[x]!=undefined){
+				sum+=grades[x];
+				count++;
+			}
+		}
+	}
+	else{
+		document.write("Array empty!!");
+	}
+	document.write("<br>");
+
+
+	document.write("Sum is " + sum + "<br>");
+	document.write("Average is " + sum/count + "<br>");
+</script>

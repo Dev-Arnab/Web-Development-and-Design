@@ -1,0 +1,26 @@
+section{
+	width:100%;
+	background:#00B7EA;
+	
+	-webkit-column-count:3;
+	-moz-column-count:3;
+	-o-column-count:3;
+	column-count:3;
+
+	-webkit-column-gap:20px;
+	-moz-column-gap:20px;
+	-o-column-gap:20px;
+	column-gap:20px;
+
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	-o-border-radius:25px;
+	border-radius:25px;
+
+	-webkit-background-image:linear-gradient(to right,violet,blue,skyblue,green,yellow,orange,red);
+	-moz-background-image:linear-background(to right,violet,blue,skyblue,green,yellow,orange,red);
+	-o-background-image:linear-gradient(to right,violet,blue,skyblue,green,yellow,orange,red);
+	background-image:linear-gradient(to right, violet,blue,skyblue,green,yellow,orange,red);
+	
+
+}

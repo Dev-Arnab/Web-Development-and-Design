@@ -1,0 +1,15 @@
+h2{
+	text-align:center;
+}
+
+div{
+	background:#0000CC;
+	color:#FFFFFF;
+	height:100px;
+	width:20%;
+	display:inline-block;
+	border:10px solid black;
+	margin:5px;
+	padding:10px 20px 30px 10px;
+
+}

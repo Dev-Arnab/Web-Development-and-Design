@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment</title>
+
+	<style>
+		#button{
+			text-align:center;
+			padding:10px;
+		}
+		span{
+			background-color:grey;
+			padding:5px;
+			border-radius:100px;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		function validate(){
+			var num = document.getElementById("phone").value;
+			var rel = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+			///^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+			if(rel.test(num)){
+				document.getElementById("alert").style.color = "green";
+				document.getElementById("alert").innerHTML = "Valid";
+				return true;
+			}
+			else{
+				document.getElementById("alert").style.color = "red";
+				document.getElementById("alert").innerHTML = "Invalid";
+				return false;
+			}
+		}
+	</script>
+
+	<form>
+		<fieldset>
+			<legend>Simple Form</legend>
+
+			<table>
+				<tr>
+					<td>First Name:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" name="lastname"></td>
+				</tr>
+				<tr>
+					<td>Phone Number:</td>
+					<td><input type="number" name="phone" id="phone" placeholder="***********" onblur="validate();"></td>
+					<td><div id="alert"></div></td> 
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password"></td>
+				</tr>
+				<tr>
+					<td>Favourite Color:</td>
+					<td><input type="color" name="color"></td>
+				</tr>
+				<tr>
+					<td colspan="2" id="button"><span>Submit</span></td>
+				</tr>
+
+			</table>
+
+
+
+
+
+		</fieldset>
+
+
+
+	</form>
+
+</body>
+
+</html>

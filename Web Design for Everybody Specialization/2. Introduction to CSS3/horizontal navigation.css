@@ -1,0 +1,44 @@
+body{
+	padding:1%;
+	margin:2%;
+	background:#F2F2;
+}
+
+nav{
+	box-sizing:border-box;
+	border:2px solid #0642;
+	color:#06425C;
+	background:#FFFF;
+	overflow:auto;
+	text-align:center;
+	
+	
+}
+
+nav a{
+    	box-sizing:border-box;
+    	display:inline-block;
+    	height:60px;
+    	color:#FFFF;
+    	background:#1234;
+    	text-decoration:none;
+    	border-radius:20px;
+    	margin:20px;
+    	padding:2%;
+    	width:15%;
+}
+
+.current{
+	background:skyblue;
+}
+
+nav a:hover{
+	color:#000000;
+	border-radius:0;
+	background:blue;
+}
+
+nav a:active{
+	background:black;
+	color:white;
+}

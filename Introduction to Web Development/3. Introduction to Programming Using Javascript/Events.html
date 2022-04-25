@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Events</title>
+
+</head>
+
+<body onload="alert('This page has loaded, okay?');">
+
+	<script>
+		function field_check_1(){
+			var field = document.getElementById("field_1").value;
+
+			if(field.length < 5){
+				document.getElementById("message_1").innerHTML = "Too short!!";
+			}
+				else{
+					document.getElementById("message_1").innerHTML = "That's too long!";
+				}
+		}
+
+		function field_check_2(){
+			var field = document.getElementById("field_2").value;
+
+			if(field.length != 0){
+				document.getElementById("message_2").innerHTML = "Input accepted!";
+			}
+			else{
+				document.getElementById("message_2").innerHTML = "You must enter something!!";
+			}
+		}
+
+		function field_check_3(){
+			var field = document.getElementById("field_3").value;
+
+			if(field.length == 5){
+				document.getElementById("message_3").innerHTML = "You wrote 5 characters!";
+			}
+			else{
+				document.getElementById("message_3").innerHTML = "You must enter something!!";
+			}	
+		}
+	</script>
+
+	<h1>Experimenting with Links and Texts</h1>
+
+	<a href="http://www.google.com"><button>Go to Google</button></a>
+
+	<p style="color:blue; font-size:200%;">Practicing HTML is fun. <em>So far </em>we habe tried that help us describe how we want our webpage to look. We have tried the gead, title, H (Heading) and paragraph tags so far. Very few people know all the tags in HTML, but that is okay becaause we can do a lot with just some basic tags. We can learn about new tags when we need them.</p>
+
+	<h2>Onblur Event Page</h2>
+
+	<input type="text" id="field_1" onblur="field_check_1();"><span id="message_1"></span>
+	<input type="text" id="field_2" onblur="field_check_2();"><span id="message_2"></span>
+	<input type="text" id="field_3" onblur="field_check_3();"><span id="message_3"></span> 
+</body>
+
+
+</html>

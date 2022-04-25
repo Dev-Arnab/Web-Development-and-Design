@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment</title>
+
+</head>
+
+
+<body onload="alert('Nice to meet you!');">
+	
+	<script>
+		function show(){
+			var a = prompt("Enter a number: ");
+			var b = prompt("Enter another number: ");
+
+			var answer = a * b;
+
+			document.getElementById("hidden").innerHTML = "The multiplication of the two numbers is " + answer;
+		}
+	</script>
+
+	<button onclick="show();">Click Me</button>
+
+	<p id="hidden"></p>
+
+</body>
+
+
+
+</html>

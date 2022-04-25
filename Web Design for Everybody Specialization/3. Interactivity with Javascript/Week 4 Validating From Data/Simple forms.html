@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Simple forms</title>
+
+	<style>
+		label{
+			display:block;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<form>
+		<fieldset>
+			<legend>Input Types</legend>
+
+			<label>Name: <input required type="text" name="name"></label>
+
+			<label>Email: <input type="email" name="email"></label>
+
+			<label>Password: <input type="password" name="password"></label>
+
+
+			Radio buttons: 
+			<label>Male<input type="radio" name="sex" value="male" checked></label>
+
+			<label>Female<input type="radio" name="sex" value="female"></label>
+
+
+			Checkbox: 
+			<label>Contact me via email<input type="checkbox" name="contact1" value="email"></label>
+
+			<label>Contact me via phone<input type="checkbox" name="contact2" value="phone"></label>
+
+			
+			<label>Number: <input type="number" name="number_input" min="1" max="100"></label>
+
+			<label>Range: <input type="range" name="range" min="1" max="100"></label>
+
+			<label>Color<input type="color" name="color"></label>
+
+			<label>Date: <input type="date" name="date"></label>
+
+			<label>URL: <input type="url" name="url"></label>
+
+			<input type="submit" value="Click here">
+		</fieldset>
+	</form>
+
+</body>
+
+
+
+</html>

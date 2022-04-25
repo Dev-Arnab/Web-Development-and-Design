@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Output</title>
+</head>
+
+<!--
+    There are 5 ways we can add javascript.
+	1. An alert box using window.alert()
+	2. A prompt using window.prompt()
+	3. HTML output using document.write()
+	4. HTML element using innerHTML()
+	5. The browser console using console.log()
+
+-->
+
+<body>
+
+	<h1 id="test">Tester</h1>
+	<h1 id='test'>Tester</h1>
+	
+	<script>
+		alert("Hello World!!");
+		prompt("Enter your name: ");
+		document.write("<h2>Time to learn Javascript<h2>");
+		document.getElementById('test').innerHTML="Hello World";
+		console.log("Mighty Skeleton");
+	</script>
+
+	<br>
+	
+	<nonscript>
+		Your browser doesn't support or has disabled Javascript
+	</nonscript>
+
+	<p>What happens if we have two elements with id='test'?</p>
+
+</body>
+
+</html>

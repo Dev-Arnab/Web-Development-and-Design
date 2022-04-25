@@ -1,0 +1,60 @@
+h1{
+	color:red;
+}
+
+h2{
+
+	color:blue;
+	width:200px;
+	background:black;
+	margin:10px;
+	padding:10px;
+	border:3px solid red;
+}
+
+section{
+	display:inline-block;
+	width:500px;
+}
+
+ol{
+	list-style-type:hebrew;
+}
+
+ul{
+	list-style-type:bengali;
+}
+
+ul,ol{
+	list-style-image: url("C:\Users\devjy\Downloads\me.gif");
+}
+
+#one{
+	list-style-type:circle;
+}
+
+div{
+	display:inline-block;
+	margin-right:10px;
+}
+
+#me{
+	border:10px solid #0006CC;
+}
+
+#friend{
+	border:5px dotted black;
+}
+
+.one{
+	border:7px solid red;
+}
+
+footer{
+	display:inline-block;
+	margin-right:5px;
+}
+
+img[src*="Photos"]{
+	border:10px dotted black;
+}

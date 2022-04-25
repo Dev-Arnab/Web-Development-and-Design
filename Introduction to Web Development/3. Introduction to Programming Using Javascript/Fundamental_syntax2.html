@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript syntax</title>
+</head>
+
+<body>
+	<script>
+		function validate(){
+		//var input=document.getElementById("inpt").value;
+
+		if(document.getElementById("inpt").value!=0){
+			document.getElementById("para").innerHTML="You haven't written anything in the box!!";
+		}
+		else{
+			document.write("Great!! So you can write.");
+		}
+	}
+	</script>
+
+	<h1 style="color:blue;">Let's see another button</h1>
+
+	<input id="inpt" type="text">
+
+	<input type="submit" value="Color it" onclick="validate()">
+	<br>
+
+	<p style="color:yellow;" id="para"></p>
+
+</body>
+
+
+</html>

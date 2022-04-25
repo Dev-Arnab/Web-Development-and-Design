@@ -1,0 +1,36 @@
+body{
+	margin:1%;
+	padding:1%;
+	background:#F2F2F2;
+}
+
+nav{
+    display:inline-block;
+    box-sizing:border-box;
+    color::#06425C;
+    background:#486B02;
+    border:1px solid black;
+    width:15%;
+    height:100vh;
+    margin-right:15px;
+    min-width:125px;
+    overflow:auto;
+}
+
+nav a{
+	display:block;
+	line-height:45px;
+	height:45px;
+	color:#FFFFFF;
+	text-decoration:none;
+	/*background-image:url('..//images//arrow.png');*/
+	padding-left:70px;
+	margin:10px 0 10px 5px;
+}
+
+section{
+	display:inline-block;
+	width:70%;
+	height:100vh;
+	overflow:auto;
+}
